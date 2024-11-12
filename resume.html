@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>P.Nyamari Official - Resume</title>
+    <style>
+        /* CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 14px;
+        }
+
+        header {
+            background: linear-gradient(to right, #000099 0%, #996633 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+            padding: 8px;
+        }
+
+        nav ul li a:hover {
+            background-color: #003d00;
+            border-radius: 5px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .cvcontainer {
+          background-color: #ffffff;
+          padding: 20px;
+          margin: 2rem auto; /* Center the container horizontally */
+          max-width: 900px;
+          border-radius: 10px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+          width: 100%; /* Ensure it takes full width up to the max-width */
+          max-height: 80vh; /* Adjust this value as needed */
+          overflow-y: auto; /* Enables vertical scrolling if content overflows */
+}
+
+        section {
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fafafa;
+        }
+
+        section h2 {
+            background: linear-gradient(to right, #000099 0%, #996633 100%);
+            color: white;
+            padding: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        footer {
+            background: linear-gradient(to right, #000099 0%, #996633 100%);
+            color: white;
+            padding: 10px;
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .half-column {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .half-column > div {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                position: absolute;
+                background-color: #000099;
+                top: 60px;
+                right: 20px;
+                border-radius: 5px;
+                padding: 10px;
+                width: 150px;
+            }
+
+            nav ul li {
+                display: block;
+                text-align: left;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active + ul {
+                display: flex;
+            }
+
+            .cvcontainer {
+                padding: 2rem 1rem;
+                margin: 1.5rem;
+                max-width: 100%;
+            }
+
+            footer {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/BOB10.png" alt="Bob10Mziki Logo">
+        </div>
+        <h1>P.Nyamari Official</h1>
+        <nav>
+            <span class="hamburger">&#9776;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">ContactMe</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="cvcontainer">
+        <section>
+            <h2>Contact</h2>
+            <div class="half-column">
+                <div>
+                    <p><strong>Address:</strong> 00232, Ruiru Membley</p>
+                    <p><strong>Phone:</strong> 0705672898</p>
+                    <p><strong>Email:</strong> <a href="mailto:Peternyamari70@gmail.Com">Peternyamari70@gmail.Com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Personal Details</h2>
+            <div class="half-column">
+                <div>
+                    <p><strong>Nationality:</strong> Kenyan</p>
+                    <p><strong>Identity Number:</strong> 29774039</p>
+                    <p><strong>Languages:</strong> English, Kiswahili</p>
+                </div>
+                <div>
+                    <p><strong>Religion:</strong> Christian</p>
+                    <p><strong>Status:</strong> Married</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Summary</h2>
+            <p>Effective communication and collaboration skills, working with teams and clients on projects. A continuous learner with a passion for personal and professional development. Enthusiastic and proactive attitude towards work and challenges. Well-rounded individual with hobbies like reading, writing songs, and enjoying nature walks.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="half-column">
+                <div>
+                    <p><strong>Degree:</strong> Degree in Information Technology – Current, Zetech University - Nairobi</p>
+                    <p><strong>Diploma:</strong> Diploma in Information Technology, 01/05/2022 – 10/11/2023, Zetech University - Nairobi</p>
+                </div>
+                <div>
+                    <p><strong>KCSE Certificate:</strong> Secondary School Education, 2007 - 2012, Nyamwanga Secondary School - Nyamira</p>
+                    <p><strong>KCPE Certificate:</strong> Primary School Education, 1999 - 2007, Gekano Primary School - Nyamira</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>WORK EXPERIENCE</h2>
+
+            <p><strong>2014 – 2016:</strong> China Henan Corporation - Uasin Gishu, Kenya</p>
+            <p><strong>Road Construction Worker:</strong></p>
+            <ul>
+                <li>Materials laboratory.</li>
+                <li>CBR testing.</li>
+                <li>Field density (sand replacement).</li>
+                <li>FI. EI Testing.</li>
+                <li>Proctor Test T180 and T99.</li>
+                <li>Atterberg limits (LL, PL and PI).</li>
+                <li>Grading of materials.</li>
+                <li>Test of Bitumenous products.</li>
+            </ul>
+            
+            <p><strong>2017 - 2018:</strong> Power Star Supermarket - Nairobi, Kenya</p>
+            <ul>
+                <li>Worked as a counter attendant.</li>
+            </ul>
+            
+            <p><strong>2018 - 2021:</strong> Spinners & Spinners LTD - Nairobi, Kenya</p>
+            <ul>
+                <li>Worked as a Quality Assurance Inspector.</li>
+                <li>Worked as a Machine Operator.</li>
+                <li>Sales/Customer Support.</li>
+            </ul>
+            
+            <p><strong>18th January 2023 to 28th April 2023:</strong> Zetech University Industrial Attachment</p>
+            <p>Involved in:</p>
+            <ul>
+                <li>Troubleshooting a hard disk & Data Backup.</li>
+                <li>Operating, maintaining, and troubleshooting Kyocera printers.</li>
+                <li>Testing, debugging, and documenting software.</li>
+                <li>Crimping Ethernet ports and cables.</li>
+                <li>Monitoring performance of ICT equipment.</li>
+                <li>Guiding users on how to use applications.</li>
+                <li>Issuing ICT equipment to users and inventory keeping.</li>
+                <li>Sensitizing on safe and effective use of ICT facilities.</li>
+                <li>Troubleshooting network connections (LAN/Wireless).</li>
+                <li>Managing ICT labs.</li>
+                <li>ERP management.</li>
+                <li>CCTV installation.</li>
+            </ul>
+            
+            <p><strong>1st April 2024 to 20th May 2024:</strong> RGA Shipment Company</p>
+            <ul>
+                <li>Data entry.</li>
+            </ul>
+            
+            <p><strong>27th May 2024 to 5th July 2024:</strong> Wholetek Company</p>
+            <ul>
+                <li>Customer Support.</li>
+            </ul>
+            
+        </section>
+
+        <section>
+            <h2>SKILLS</h2>
+<h3>PROFESSIONAL SKILLS</h3>
+<ul>
+    <li>Microsoft Office</li>
+    <li>Programming/Web Development (HTML, CSS, PHP, C, C++, JAVA)</li>
+    <li>Data Entry</li>
+    <li>Database Management</li>
+    <li>Developing Desktop Applications (Java Swing in NetBeans)</li>
+    <li>Troubleshooting Computers</li>
+    <li>Operating, Maintaining, and Troubleshooting Printers</li>
+    <li>Testing, Debugging, and Documenting Software</li>
+    <li>Crimping Ethernet Ports and Cables</li>
+    <li>Monitoring the Performance of ICT Equipment</li>
+    <li>Record Keeping</li>
+    <li>Troubleshooting Network Connections (LAN/Wireless)</li>
+    <li>Managing ICT Labs</li>
+    <li>CCTV Installation</li>
+    <li>ERP Management</li>
+</ul>
+
+<h3>OTHER SKILLS</h3>
+<ul>
+    <li>Team Leadership</li>
+    <li>Compliance Understanding</li>
+    <li>Wave Picking</li>
+    <li>Supervision</li>
+    <li>Communication</li>
+    <li>Problem Solving</li>
+</ul>
+
+        </section>
+
+        <section>
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Writing Songs</li>
+                <li>Walking</li>
+                <li>Doing Research</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>References</h2>
+            <p><strong>Name:</strong> Saina Kemunto Moraa. <strong>Contact:</strong> 0797487815</p>
+            <p><strong>Name:</strong> Susan Nyaruri Moses. <strong>Contact:</strong> 0723142767</p>
+            <p><strong>Name:</strong> Clinton Mose Atambo. <strong>Contact:</strong> 0746964803</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 P. Nyamari. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('nav ul');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

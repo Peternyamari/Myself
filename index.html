@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peter Nyamari Official - Home</title>
+    <style>
+        /* CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .container p{
+            font-size: 11px;
+        }
+
+        header {
+            background: linear-gradient(to right, #000099 0%, #996633 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+            padding: 8px;
+        }
+
+        nav ul li a:hover {
+            background-color: #003d00;
+            border-radius: 5px;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .intro p, section p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: #555;
+            margin: 10px 0 20px;
+        }
+
+        .image-gallery {
+            background-color: #ffffff;
+            padding: 20px 0;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery img,
+        .gallery video {
+            width: 300px;
+            height: 200px;
+            border: 5px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover,
+        .gallery video:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: linear-gradient(to right, #000099 0%, #996633 100%);
+            color: white;
+            padding: 10px 0;
+            font-size: 0.8rem;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+            nav ul {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                position: absolute;
+                background-color: #000099;
+                top: 60px;
+                right: 20px;
+                border-radius: 5px;
+                padding: 10px;
+                width: 150px;
+            }
+
+            nav ul li {
+                display: block;
+                text-align: left;
+            }
+
+            nav ul li a {
+                color: white;
+                padding: 8px;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active + ul {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/BOB10.png" alt="Bob10Mziki Logo">
+        </div>
+        <h1>P.Nyamari Official</h1>
+        <nav>
+            <span class="hamburger">&#9776;</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">ContactMe</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="intro">
+        <div class="container">
+            <p>Peter Nyamari official website</p>
+        </div>
+    </section>
+    
+    <section class="image-gallery">
+        <div class="container">
+            <h2>About</h2>
+            <p>As a Virtual Assistant, I provide comprehensive support across a range of administrative and digital tasks, tailored to enhance productivity and streamline operations for businesses and individuals alike. My expertise includes managing administrative duties, data entry, research, social media management, customer support, and specialized services like cold emailing. I am skilled in using a variety of software tools, which enables me to handle everything from scheduling and email management to advanced project coordination and client communication. With a keen eye for detail and a commitment to delivering quality, I help clients focus on their core objectives by efficiently handling day-to-day tasks. My services are ideal for those looking to improve their workflow, maintain professional correspondence, and scale their business without the need for full-time in-house support.</p>
+            
+            <br>
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <video src="images/IntroductionA.mp4" controls poster="images/poster.png"></video>
+                <img src="images/3.png" alt="Community Center Image 2">
+                <img src="images/4.png" alt="Community Center Image 2">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 PeterNyamari | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
